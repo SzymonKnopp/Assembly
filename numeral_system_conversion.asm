@@ -112,15 +112,6 @@ calculateDigit:
 	jmp calculateDigit
 
 numberParsed:
-;fillWithSpaces:
-;	cmp EDI, ESP
-;	je numberReady
-;	mov [EDI], byte PTR ' '
-;	dec EDI
-;	jmp fillWithSpaces
-
-;numberReady:
-	
 	mov EDX, EBP
 	sub EDX, EDI ; calculate number of digits to write
 	sub EDX, 1
